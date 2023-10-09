@@ -1,0 +1,88 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold; 
+
+}
+ul{
+    display: flex;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #00f;
+
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;        
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:70px ;
+    left: 0;
+    right: 0;
+    background-color: #333;
+}
+
+.navbar-menu.active li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navbar-menu.active a {
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
